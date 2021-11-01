@@ -2,7 +2,7 @@
 
 mysqldump --single-transaction --skip-lock-tables --flush-privileges --all-databases > entire_database_server.sql
 
-n this article, we will go through the steps-by-steps to setup a MySQL replication, without needing to stop the master or o your services, means NO downtime.
+In this article, we will go through the steps-by-steps to setup a MySQL replication, without needing to stop the master or o your services, means NO downtime.
 
 Most tutorials on master-slave replication will required to lock the tables to accomplish a consistent copy during the initial setup of the replication. This will be a major problem for critical and high traffic sites where downtime is not possible.
 
