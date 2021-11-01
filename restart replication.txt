@@ -1,0 +1,5 @@
+Slave: stop slave;
+Master: flush logs
+Master: show master status; — take note of the master log file and master log position
+Slave: CHANGE MASTER TO MASTER_LOG_FILE='log-bin.00000X', MASTER_LOG_POS=106;
+Slave: start slave;
